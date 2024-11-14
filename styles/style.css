@@ -21,21 +21,16 @@ html, body {
 }
 
 @media (max-width: 768px) {
-
-    /* Ajuste de fontes e espaçamentos */
-    body {
-        font-size: 14px;
-        padding: 5px;
-    }
-
     .cabecalho_menu {
         flex-direction: row; /* Muda o menu para coluna no mobile */
-        gap: 0px; /* Menor espaçamento entre os links do menu */
+        gap: 20px; /* Menor espaçamento entre os links do menu */
         text-align: center;
     }
 
     .cabecalho_menu_link {
-        font-size: 18px; /* Diminui a fonte do menu */
+        font-size: 36px; /* Diminui a fonte do menu */
+        width: 100%;
+        min-width: 110px;
     }
 
     .apresentacao{
@@ -53,12 +48,19 @@ html, body {
         padding: 0%
     }
     /* Ajusta a largura das seções de conteúdo */
-    .apresentacao__conteudo2, .apresentacao__conteudo3 {
-        width: 80%; /* Largura total da tela */
+    .apresentacao__conteudo2{
+        width: 100%; /* Largura total da tela */
         padding: 0%;
         font-size: 14px;
+        max-width: 300px;
     }
 
+    .apresentacao__conteudo3 {
+        width: 50%; /* Largura total da tela */
+        padding: 0%;
+        font-size: 14px;
+        min-width: 350px;
+    }
     .apresentacao__conteudo__titulo, .apresentacao__conteudo__titulo2 {
         font-size: 16px; /* Reduz o tamanho do título */
         padding: 0% 0 0 0;
@@ -67,6 +69,7 @@ html, body {
 
     .apresentacao__conteudo__texto2 {
         font-size: 14px; /* Reduz o tamanho do texto */
+        max-width: 400px;
     }
 
     /* Ajusta o footer para centralizar melhor */
@@ -90,7 +93,6 @@ html, body {
 body{
 
     background-color: black;
-    overflow-y: scroll;
     transform: scale(1);
     animation: fadeInDelayed 2s ease-out;
     
@@ -100,13 +102,13 @@ body{
     padding: 1% 0% 0% 0% ;
     margin: 0 auto;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     
 }
 
 .cabecalho_menu{
     display: flex;
-    gap: 40px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -121,7 +123,7 @@ body{
 }
 .cabecalho_menu_link{
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     color: white;
     text-decoration: none;
@@ -144,7 +146,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2% 2% 5% 10%;
+    margin: 0% 2% 1% 10%;
     flex: 1;
 }
 
@@ -153,20 +155,12 @@ body{
     width: 460px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
     
     
 
 }
 
-.apresentacao__conteudo2{
-    width: 100%;
-    max-width: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
-}
 .apresentacao__conteudo__titulo{
     font-size: 36px;
 
@@ -174,7 +168,7 @@ body{
     text-align: center;
     justify-items: center;
     color: white;
-    padding: 10% 0% 0% 0%;
+    padding: 2% 0% 0% 0%;
 
 
 }
@@ -192,7 +186,7 @@ body{
 
 .apresentacao__conteudo__texto{
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
     justify-items: center;
     color: white;
@@ -203,7 +197,7 @@ body{
 
 .apresentacao__conteudo__texto2{
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     text-align: justify;
     justify-items: center;
     color: white;
@@ -211,7 +205,7 @@ body{
 
 .apresentacao__conteudo2{
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     padding: 0% 5% 0% 5%;
     display: flex;
     flex-direction: column;
@@ -275,7 +269,7 @@ body{
 .apresentacao__links__link:hover{
 
     background-color: #191919;
-    width:400px;
+    transform: scale(1.05   );
     font-size: 26px;
 }
 
@@ -290,7 +284,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
+    margin: 00px 150px 0px 0px;
     
 
 }
@@ -327,7 +321,7 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: 600;   
-    padding: 2px;
+    padding: 0px;
     flex: 1;
     height: 100%;
 
@@ -342,7 +336,7 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: 600;   
-    padding: 2px;
+    padding: 0px;
     font-size: 12px;
     text-align: center;
     
@@ -355,7 +349,7 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: 600;   
-    padding: 20% 0px 0px 00px;
+    padding: 5% 0px 0px 00px;
     flex: 1;
     height: 100%;
 }
